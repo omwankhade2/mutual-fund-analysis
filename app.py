@@ -335,7 +335,7 @@ st.subheader("🏆 Top 10 Mutual Funds")
 
 top10 = (
     filtered_df
-    .groupby('MutualFund_Name')['return_5yr']
+    .groupby('Mutual Fund Name')['return_5yr']
     .mean()
     .sort_values(ascending=False)
     .head(10)
@@ -365,7 +365,7 @@ st.subheader("📊 Mutual Fund Return Comparison")
 
 dashboard = (
     filtered_df
-    .groupby('MutualFund_Name')[
+    .groupby('Mutual Fund Name')[
         ['return_1yr', 'return_3yr', 'return_5yr']
     ]
     .mean()
