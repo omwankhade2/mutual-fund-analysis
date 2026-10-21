@@ -65,7 +65,7 @@ st.markdown("""
 @st.cache_data
 def load_data():
 
-    df = pd.read_csv("mutual_funds_ind (1).csv")
+    df = pd.read_csv("mutual_funds_indi (1).csv")
 
     # Remove unwanted spaces from column names
     df.columns = df.columns.str.strip()
